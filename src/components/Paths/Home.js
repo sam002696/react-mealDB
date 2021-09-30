@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import MealsStyling from '../Styling/MealsStyling';
+import LightSpeed from 'react-reveal/LightSpeed';
 
 const Home = () => {
     const [searchMeal, setSearchMeal] = useState([]);
@@ -24,7 +25,11 @@ const Home = () => {
                     <p className="font-semibold text-xs">Search</p>
                 </button>
             </div>
-            <h1 className="font-serif mt-10 mx-auto pb-10 text-5xl text-center border-b-4 w-2/4"><span className="font-extrabold text-red-600">Meals</span> Found : {meals.length}</h1>
+
+            <LightSpeed right>
+                <h1 className="font-serif mt-10 mx-auto pb-10 text-5xl text-center border-b-4 w-2/4"><span className="font-extrabold text-red-600">Meals</span> Found : {meals.length}</h1>
+            </LightSpeed>
+
             <div className="grid lg:grid-cols-3 p-36 gap-8">
                 {
                     meals.map(meal => <MealsStyling meal={meal} key={meal.idMeal}></MealsStyling>)
