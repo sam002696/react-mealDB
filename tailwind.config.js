@@ -5,6 +5,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      lineClamp: {
+        10: '10',
+        11: '11',
+        8: '8'
+      },
       colors: {
         rose: colors.rose,
       },

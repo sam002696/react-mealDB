@@ -18,7 +18,7 @@ const MealsStyling = (props) => {
                     </div>
                 </div>
                 <LightSpeed left>
-                    <p className="text-base text-gray-600 mt-1 line-clamp-2 hover:line-clamp-none">
+                    <p className="text-base text-gray-600 mt-1 line-clamp-5 hover:line-clamp-none">
                         {strInstructions}
                     </p>
                 </LightSpeed>
